@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/food_back"
+        android:text="Food"
+        android:fontFamily="@font/product_sans_regular"
+        android:textAllCaps="false"
+        android:textSize="55sp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/book_back"
+        android:text="Books"
+        android:fontFamily="@font/product_sans_regular"
+        android:textAllCaps="false"
+        android:textSize="55sp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/money_back"
+        android:text="Money"
+        android:fontFamily="@font/product_sans_regular"
+        android:textAllCaps="false"
+        android:textSize="55sp"
+        android:textColor="#FFFFFF" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clothes_back"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Clothes"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="55sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/logout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:src="@drawable/logout"
+            app:fabSize="normal"
+            app:fabCustomSize="64dp"
+            app:backgroundTint="@color/fbutton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button4"
+            app:layout_constraintVertical_bias="0.925" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
